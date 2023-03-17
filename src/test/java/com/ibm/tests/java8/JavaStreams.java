@@ -25,13 +25,22 @@ public class JavaStreams {
 		 * 
 		 */
 		
+		/*
+		 *  Open Amazon.in
+		 *  Fetch all the links
+		 *  Fetch text from the links and remove empty links
+		 *  Remove duplicate 
+		 *  Sort the text in alphabetical order
+		 *  Print text starting with C and D
+		 */
+		
 		driver.findElements(By.xpath("//a")).stream()
-		.map(e->e.getText())
+		.map(e->e.getText())	// inside is lambda expression. LHS is variable. RHS is expression.
 		.filter(s->!s.isBlank())
-		.distinct()
+		.distinct()	
 		.sorted()
 		.filter(s->s.startsWith("C")||s.startsWith("D"))
-		.forEach(s->System.out.println(s));
+		.forEach(s->System.out.println(s)); // each element in S should be printed on console
 
 	}
 
