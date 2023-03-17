@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
+    <classes>
+      <class name="com.ibm.tests.Test1">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginToApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ibm.tests.Test1 -->
+      <class name="com.ibm.tests.Test2">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyTitle"/>
+        </methods>
+      </class> <!-- com.ibm.tests.Test2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
