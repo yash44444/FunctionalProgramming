@@ -1,4 +1,4 @@
-package com.ibm.tests.java8;
+package com.ibm.tests.streams;
 
 import java.util.ArrayList;
 import java.util.Collection;

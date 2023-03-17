@@ -1,4 +1,4 @@
-package com.ibm.tests.java8;
+package com.ibm.tests.streams;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
