@@ -19,6 +19,16 @@ Streams offer below methods:
 4) forEach()
 5) distinct()
 6) sorted()
+7) Optional
+
+# Optional
+optional is a container object that may or may not contain a non-null value. It is often used as a return type for methods that may or may not find a value in a collection. ex: If you want to add list elements and store the result in a variable, Optional would be used which act as a return type.
+
+# reduce
+ performs a reduction operation on the elements of the stream. The reduce() method takes a binary operator as its parameter, which is used to combine two elements of the stream. ex: reduce((a,b)->a+b);
+
+# get
+get() is a method of the Optional class, which is used to retrieve the value contained in an optional object.
 
 
 
